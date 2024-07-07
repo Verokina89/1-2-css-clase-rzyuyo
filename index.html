@@ -1,0 +1,189 @@
+<!-- *** Lo primero que debes hacer es FORKEAR este documento *** -->
+<!-- *** si tenéis dos veces abierto el mismo proyecto no se refrescará y dará problemas *** -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>HTML MOLA</title>
+    <link href="./styles.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="warning yellow">
+          <span
+            >Lo primero que debes hacer es <strong><i>FORK</i></strong> de este
+            documento</span
+          ><span>💾 Recuerda guardar tus cambios para no perderlos.</span>
+        </div>
+        <div class="warning red">
+          <span
+            >Si tienes dos veces abierto el mismo proyecto no se refrescará y
+            dará problemas. Trabaja siempre desde un solo espacio 💻</span
+          >
+        </div>
+      </header>
+      <h2>Selectores, modelo de cajas, propiedades de texto y flexbox</h2>
+      <p>
+        Los selectores en CSS son las reglas que usamos para seleccionar los
+        elementos que queremos modificar. Hay muchos tipos de selectores, cada
+        uno con su propio propósito.
+      </p>
+
+      <h3>Selectores</h3>
+      <p>
+        Los selectores básicos se utilizan para seleccionar elementos por su
+        nombre, clase o ID.
+      </p>
+      <ul>
+        <li>
+          <strong>Por nombre o elemento:</strong> Se utiliza para seleccionar
+          todos los elementos con un nombre determinado.
+        </li>
+        <li>
+          <strong>Por clase:</strong> Se utiliza para seleccionar todos los
+          elementos con una clase determinada.
+        </li>
+        <li>
+          <strong>Por ID:</strong> Se utiliza para seleccionar un elemento con
+          un ID determinado.
+        </li>
+        <li>
+          <strong>Por atributo:</strong> Se utiliza para seleccionar elementos
+          con un atributo determinado.
+        </li>
+      </ul>
+      <h3>Modelo de cajas</h3>
+      <p>
+        El modelo de cajas en CSS es un modelo conceptual que describe cómo se representan los elementos HTML en la pantalla. El modelo de cajas se divide en cuatro partes:
+      </p>
+      <ul>
+        <li>Contenido: Es el contenido real del elemento, como el texto o la imagen.</li>
+        <li>Margen: Es el espacio entre el contenido y el borde de la caja.</li>
+        <li>Relleno: Es el espacio entre el contenido y el borde del relleno.</li>
+        <li>Borde: Es el borde que rodea la caja.</li>
+      </ul>
+      <p>Las propiedades del modelo de cajas se utilizan para controlar el tamaño y el aspecto de las cajas. Algunas de las propiedades más comunes son:</p>
+      <ul>
+        <li>width: Establece el ancho de la caja.</li>
+        <li>height: Establece el alto de la caja.</li>
+        <li>margin: Establece el margen de la caja.</li>
+        <li>padding: Establece el relleno de la caja.</li>
+        <li>border: Establece el borde de la caja.</li>
+      </ul>
+      <h3>Ejercicio</h3>
+      <p>Crea una página web que tenga los siguientes elementos:</p>
+      <h4>Esto lo tendrás que hacer en el documento HTML</h4>
+      <ul>
+        <li>Una etiqueta DIV con una clase llamada "element-black"</li>
+        <li>Una etiqueta DIV con un ID llamado "element-red"</li>
+        <li>Una etiqueta SECTION</li>
+        <!-- https://static.wikia.nocookie.net/espokemon/images/0/0b/Snorlax.png -->
+        <li>Una etiqueta IMG con un atributo ALT y otra sin ALT</li>
+        <li>Añade dentro de la etiqueta section un H2 y un párrafo</li>
+        <li>Añade dentro de los DIV un ARTICLE a cada uno de ellos</li>
+        <li>Añade dentro del primer ARTICLE un h3, dos párrafos y una lista</li>
+        <li>
+          Añade dentro del segundo ARTICLE añade un h4, un h3, una lista con 3
+          elementos y un párrafo
+        </li>
+        <li>Crea un enlace a THEBRIDGE.TECH</li>
+      </ul>
+      <h4>Esto lo tendrás que hacer en el documento CSS</h4>
+      <ul>
+        <li>
+          A los DIVs vamos a darle una dimensión de 200px de ancho y 200px de
+          alto
+        </li>
+        <li>
+          A la clase "element-black" le diremos que su background sea de color
+          negro
+        </li>
+        <li>
+          Al ID "element-red" le diremos que su background sea de color
+          rojo
+        </li>
+        <li>Dale las mismas dimensiones al article que tiene el DIV</li>
+        <li>Pon de color verde el H2 y un tamaño de 20px</li>
+        <li>Pon de color azul los párrafos y un tamaño de 16px</li>
+        <li>Pon un borde de 5px de color amarillo a la imagen con atributo ALT</li>
+        <li>Las imagenes deben medir 200px de ancho</li>
+        <li>Quita a los enlaces el subrayado</li>
+        <li>Todos los DIVs tienen que tener un margin y un padding de 20px</li>
+      </ul>
+      <hr />
+      <!-- ** AQUÍ TU SOLUCIÓN ** -->
+      <div class="element-black">
+        <article>
+          <h3>Este es el Element Black</h3>
+          <p>Párrafo 1:</p>
+          <p>Párrafo 2:</p>
+          <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+          </ul>
+        </article>
+      </div>
+      <div id="element-red"></div>
+         <article>
+           <h4>Este es el Element Red</h4>
+           <h3>es un H3</h3>
+           <ul>
+             <li>1</li>
+             <li>2</li>
+             <li>3</li>
+           </ul>
+         </article>
+      <section>
+        <h2>POKEMON</h2>
+        <p>Esto es un pokemon</p>
+        <a href="https://thebridge.tech">THE BRIDGE</a>
+      </section>
+      <img src="https://static.wikia.nocookie.net/espokemon/images/0/0b/Snorlax.png" />
+      <img src="https://static.wikia.nocookie.net/espokemon/images/0/0b/Snorlax.png" alt="pokemon"/>
+
+      <h3>Flexbox</h3>
+      <p>
+        Flexbox es un módulo CSS que permite crear diseños flexibles y adaptables. Flexbox utiliza un sistema de ejes para colocar los elementos de una página web.</p>
+      <p>Las propiedades de flexbox se utilizan para controlar el comportamiento de los elementos en un </strong>contenedor flexbox</strong>. Algunas de las propiedades más comunes son:</p>
+      <ul>
+        <li>display: Establece el tipo de contenedor flexbox.</li>
+        <li>flex-direction: Establece la dirección del eje principal.</li>
+        <li>justify-content: Establece el alineamiento de los elementos a lo largo del eje principal.</li>
+        <li>align-items: Establece el alineamiento de los elementos a lo largo del eje transversal.</li>
+        <li>flex-wrap: Establece si los elementos se envuelven o no a lo largo del eje principal.</li>
+      </ul>
+      <h3>Ejercicio</h3>
+      <p>Crea una página web que tenga los siguientes elementos:</p>
+      <h4>Esto lo tendrás que hacer en el documento HTML</h4>
+      <ul>
+        <li>Crea un DIV con la clase llamada "element-containerflex"</li>
+        <li>Dentro Crea 3 etiquetas DIV con una clase llamada "element-flexblack"</li>
+        <li>En cada una de ellas escribe el número 1, 2 y 3 (uno por cada caja)</li>
+      </ul>
+      <h4>Esto lo tendrás que hacer en el documento CSS</h4>
+      <ul>
+        <li>La clase "element-containerflex" tendrá que tener el atributo display flex y un borde de color rojo de 3px</li>
+        <li>Los tres elementos con la clase "element-flexblack" deben medir 100px de ancho y 100 de alto y tener un background de color negro. El texto interior debe ser de color blanco, en negrita y un tamaño de 20px</li>
+        <li>Los tres elementos con la clase "element-flexblack" deben estar separados entre sí ocupando todo el ancho del container</li>
+        <li>Los números tienen que quedar centrados en vertical y horizontal en su contenidor</li>
+      </ul>
+      <hr />
+      <!-- ** AQUÍ TU SOLUCIÓN ** -->
+      <div class="element-containerflex">
+        <div class="element-flexblack">1</div>
+        <div class="element-flexblack">2</div>
+        <div class="element-flexblack">3</div>
+      </div>
+        
+      
+      
+      <hr />
+    </main>
+  </body>
+</html>
